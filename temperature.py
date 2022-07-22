@@ -2,18 +2,32 @@
 
 x = input('Input your temperature in celsius: ')
 
-f = 'Fahrenheit'
-k = 'Kelvin'
-r = 'Rankine'
-
 def celsius_to_farenheit(x):
     x = float(x)
     return ((x * 1.8) + 32.0)
 
-results = celsius_to_farenheit(x)
+def celsius_to_kelvin(x):
+    x = float(x)
+    return (x + 273.15)
 
-print("you entered: {}".format(x))
-print("the converted value is {}".format(results))
+def celsius_to_rankine(x):
+    x = float(x)
+    return ((x * 1.8) + 491.67)
+def celsius_to_romer(x):
+    x = float(x)
+    return ((x * 0.252) + 7.5)
+
+
+results = celsius_to_farenheit(x)
+results1 = celsius_to_kelvin(x)
+results2 = celsius_to_rankine(x)
+results3 = celsius_to_romer(x)
+
+print("You entered: {}".format(x))
+print("The converted value is {} in Farenheit".format(results))
+print("The converted value is {} in Kelvin".format(results1))
+print("The converted value is {} in Rankine".format(results2))
+print("The converted value is {} in Romer".format(results3))
 
 
 
