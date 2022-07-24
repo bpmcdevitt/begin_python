@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-x = input("Please input your weight in kilogram: ") #error
-y = input("Please input your height in centimeter: ") #error
+x = input("Please input your weight in kilogram: ")
+y = input("Please input your height in centimeter: ")
 
 def calculate(x, y):
     x = float(x)
